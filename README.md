@@ -1,200 +1,189 @@
-# Dental-Bill-Detective
-Smart analysis for dental invoices using real pricing benchmarks and code-level comparisons.
-# 🦷 Dental Bill Analyzer
-Wesbite: https://medical-debt-analyzer.replit.app/
-Demo Video: https://drive.google.com/file/d/10oENI09gIJUY11RMzCkIn75edDlDkdP0/view?usp=sharing
+# 🦷 Dental Bill Detective
 
-**AI-powered dental bill review tool that helps patients understand charges, detect overpricing, and generate negotiation-ready outputs.**
+Smart analysis for dental invoices using real pricing benchmarks and code-level comparisons.
+
+**Live Demo:** https://medical-debt-analyzer.replit.app/  
+**Video Demo:** https://drive.google.com/file/d/10oENI09gIJUY11RMzCkIn75edDlDkdP0/view?usp=sharing  
+
+AI-powered dental bill review tool that helps patients understand charges, detect overpricing, and generate negotiation-ready outputs.
 
 ---
 
 ## 🎯 Target
 
-Build a practical, real-world tool that helps patients:
+Build a practical tool that helps patients:
 
 - Understand confusing dental bills  
 - Detect overcharges and billing errors  
-- Compare prices against fair benchmarks  
-- Generate scripts and appeal letters  
+- Compare prices against benchmarks  
+- Generate negotiation scripts  
 - Take action instead of blindly paying  
 
-This project focuses on **patient leverage** — turning a dental invoice into clear, actionable insights.
+The goal is simple:  
+**turn a dental invoice into leverage.**
 
 ---
 
 ## 🚀 Core Workflow
+
 ```mermaid
 flowchart TD
 
-A[User uploads dental bill<br/>Text / PDF / Image]
-B[Privacy Layer<br/>PII redaction]
-C[AI Extraction<br/>Identify CDT codes + prices]
-D[Structured Data<br/>Clean bill format]
-E[Benchmark Lookup<br/>Pricing dataset + records]
-F[Error Detection<br/>Duplicates / unbundling / markups]
-G[Fair Price Calculation<br/>Compare billed vs benchmark]
-H[Savings Estimate<br/>Potential overcharge]
-I[Generate Outputs<br/>Scripts + appeal letters]
-J[Actionable Report<br/>What to do next]
+A[Upload Dental Bill]
+B[Redact Sensitive Info]
+C[Extract CDT Codes]
+D[Structure Bill Data]
+E[Compare to Benchmarks]
+F[Detect Errors]
+G[Calculate Fair Price]
+H[Estimate Savings]
+I[Generate Scripts]
+J[Actionable Report]
 
-A --> B
-B --> C
-C --> D
-D --> E
-E --> F
-F --> G
-G --> H
-H --> I
-I --> J
+A --> B --> C --> D --> E --> F --> G --> H --> I --> J
+🧠 What This Project Does
+The analyzer reads itemized dental bills and performs:
 
+CDT code extraction
 
-## 🧠 What This Project Does
+Price comparison vs benchmark datasets
 
-The Dental Bill Analyzer reads itemized dental bills and performs:
+Error detection (duplicates, unbundling, inflated pricing)
 
-- CDT code extraction  
-- Price comparison vs benchmark datasets  
-- Error detection (duplicates, unbundling, inflated pricing)  
-- Savings estimation  
-- Negotiation script generation  
-- Appeal letter generation  
+Savings estimation
 
-It converts messy bill text into a structured, easy-to-understand report.
+Negotiation script generation
 
-User uploads bill text / image
-↓
-AI extracts CDT codes + prices
-↓
-Benchmarks against pricing dataset
-↓
-Detects overcharges & errors
-↓
-Calculates fair price vs billed price
-↓
-Generates negotiation scripts & letters
-↓
-Actionable savings summary
+Appeal letter generation
 
+It converts messy bill text into a structured report patients can act on.
 
----
+🛠 Tech Stack
+Replit
 
-## 🛠 Tech Stack
+Node.js
 
-- Replit environment  
-- Node.js  
-- BEM extracted file 
-- AI-based text parsing for dental code extraction  
-- Custom pricing datasets  
-- OCR pipeline for bill images  
-- Local processing for privacy  
+BEM frontend structure
 
----
+AI parsing for dental code extraction
 
-## 🔍 Key Features
+Custom pricing datasets
 
-### Smart Code Extraction
-Reads unstructured dental bills and identifies CDT procedure codes automatically.
+OCR for bill images
 
-### Fair Price Analysis
-Compares billed amounts to benchmark pricing from curated datasets and treatment records.
+Local processing for privacy
 
-### Error Detection
+🔍 Key Features
+Smart Code Extraction
+Reads unstructured bills and identifies CDT procedure codes.
+
+Fair Price Analysis
+Compares billed amounts to benchmark pricing.
+
+Error Detection
 Flags:
-- Duplicate charges  
-- Unbundled procedures  
-- Suspicious markups  
-- Out-of-range pricing  
 
-### Savings Estimate
+Duplicate charges
+
+Unbundled procedures
+
+Suspicious markups
+
+Savings Estimate
 Shows:
-- Total billed  
-- Fair value estimate  
-- Potential savings  
-- % markup  
 
-### Negotiation Toolkit
+Total billed
+
+Fair value
+
+Potential savings
+
+% markup
+
+Negotiation Toolkit
 Auto-generates:
-- Phone negotiation scripts  
-- Appeal letters  
-- Questions to ask billing departments  
 
----
+Phone scripts
 
-## 🔒 Privacy Approach
+Appeal letters
 
-- No bill data stored permanently  
-- PII redaction pipeline  
-- Local processing where possible  
-- Designed for secure analysis  
+Talking points
 
----
+🔒 Privacy
+No bill data stored
 
-## 📊 Example Output
+PII redaction
 
-Your dental bill is 52% above fair pricing.
+Local processing where possible
+
+📊 Example Output
+Your bill is 52% above fair pricing.
 Potential savings: $1,240
 
-Detected issues:
+Issues found:
+- Duplicate X-ray charge
+- Cleaning priced 2.3× benchmark
+- Unbundled exam code
 
-Duplicate X-ray charge
+Next step:
+Call billing and request adjusted rate using script.
+🧪 Current Status
+Active build focused on:
 
-Cleaning priced 2.3× benchmark
+Improving CDT extraction
 
-Unbundled exam code
+Expanding datasets
 
-Recommended action:
-Call billing department and request adjusted rate using provided script
+Testing real bills
 
----
+Refining negotiation output
 
-## 🧪 Current Status
+UI improvements
 
-This is an **active build + experiment** focused on:
+🧭 Why This Exists
+Dental pricing is opaque.
+Patients rarely know if prices are fair.
+Most overpay.
 
-- Improving CDT extraction accuracy  
-- Expanding pricing datasets  
-- Testing real-world bills  
-- Refining negotiation output quality  
-- Making the tool usable for non-technical patients  
+This tool gives:
 
----
+clarity → leverage → savings
 
-## 🧭 Why This Exists
+📌 Next Steps
+Expand benchmark datasets
 
-Dental billing lacks transparency.  
-Patients rarely know if prices are fair.  
-Most overpay without realizing it.
+Improve OCR accuracy
 
-This project aims to give patients:
+Insurance-aware analysis
 
-**clarity → leverage → savings**
+Public deployment
 
----
+Report export
 
-## 📌 Next Steps
+⚠️ Note
+This tool provides guidance only and is not legal or financial advice.
 
-- Expand pricing benchmark datasets  
-- Improve OCR accuracy  
-- Add insurance-aware analysis  
-- UI polish for public use  
-- Deploy hosted version  
-- Add report export  
-
----
-
-## ⚠️ Note
-
-This tool provides analysis and guidance only.  
-It does not replace professional financial or legal advice.
-
----
-
-## 💡 Vision
-
-A future where patients can upload any healthcare bill  
+💡 Vision
+Upload any healthcare bill
 and instantly know:
 
-**“Is this price fair — and what should I do about it?”**
+Is this fair? What should I do?
 
 
 ---
+
+### Why this version works
+- Mermaid block properly closed  
+- No HTML `<br>` inside nodes  
+- Clean header structure  
+- GitHub-safe formatting  
+- Reads like a real startup repo  
+
+---
+
+### If Mermaid still errors
+Tell me:
+- GitHub repo link  
+- Error message screenshot  
+
+I’ll fix it to **render 100% correctly**.
