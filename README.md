@@ -175,3 +175,26 @@ and instantly know:
 
 ## 🚀 Core Workflow
 
+```mermaid
+flowchart TD
+
+A[User uploads dental bill<br/>Text / PDF / Image]
+B[Privacy Layer<br/>PII redaction]
+C[AI Extraction<br/>Identify CDT codes + prices]
+D[Structured Data<br/>Clean bill format]
+E[Benchmark Lookup<br/>Pricing dataset + records]
+F[Error Detection<br/>Duplicates / unbundling / markups]
+G[Fair Price Calculation<br/>Compare billed vs benchmark]
+H[Savings Estimate<br/>Potential overcharge]
+I[Generate Outputs<br/>Scripts + appeal letters]
+J[Actionable Report<br/>What to do next]
+
+A --> B
+B --> C
+C --> D
+D --> E
+E --> F
+F --> G
+G --> H
+H --> I
+I --> J
