@@ -1,7 +1,8 @@
 # Dental-Bill-Detective
 Smart analysis for dental invoices using real pricing benchmarks and code-level comparisons.
 # 🦷 Dental Bill Analyzer
-Demo: 
+Wesbite: https://medical-debt-analyzer.replit.app/
+Demo Video: https://drive.google.com/file/d/10oENI09gIJUY11RMzCkIn75edDlDkdP0/view?usp=sharing
 
 **AI-powered dental bill review tool that helps patients understand charges, detect overpricing, and generate negotiation-ready outputs.**
 
