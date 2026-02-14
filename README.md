@@ -41,6 +41,7 @@ I[Generate Scripts]
 J[Actionable Report]
 
 A --> B --> C --> D --> E --> F --> G --> H --> I --> J
+```
 🧠 What This Project Does
 The analyzer reads itemized dental bills and performs:
 
