@@ -23,7 +23,6 @@ This project focuses on **patient leverage** — turning a dental invoice into c
 ---
 
 ## 🚀 Core Workflow
-
 ```mermaid
 flowchart TD
 
@@ -47,6 +46,7 @@ F --> G
 G --> H
 H --> I
 I --> J
+
 
 ## 🧠 What This Project Does
 
